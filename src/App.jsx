@@ -20,7 +20,7 @@ function App() {
   // TODO: filterByAge 함수를 작성하세요. 이 함수는 최소 나이를 매개변수로 받아 해당 나이 이상인 학생들로 필터링해야 합니다.
   const filterByAge = (minAge) => {
     setFilteredStudents(
-      filteredStudents.filter((item) => {
+      students.filter((item) => {
         return item.age >= minAge;
       })
     );
@@ -30,7 +30,7 @@ function App() {
   const filterByGrade = (grade) => {
     // 여기에 코드를 작성하세요.
     setFilteredStudents(
-      filteredStudents.filter((item) => {
+      students.filter((item) => {
         return item.grade === grade;
       })
     );
